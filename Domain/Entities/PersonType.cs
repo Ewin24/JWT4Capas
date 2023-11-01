@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class PersonType
+    public class PersonType : BaseEntityInt
     {
-        public int IdPersonType { get; set; }
         public string TypePersonDescription { get; set; }
         public ICollection<Person> Persons { get; set; }
 

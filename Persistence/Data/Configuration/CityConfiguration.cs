@@ -14,8 +14,8 @@ namespace Persistence.Data.Configuration
         {
             builder.ToTable("cities");
 
-            builder.HasKey(e => e.IdCity);
-            builder.Property(e => e.IdCity)
+            builder.HasKey(e => e.Id);
+            builder.Property(e => e.Id)
             .HasMaxLength(3);
 
             builder.Property(p => p.CityName)

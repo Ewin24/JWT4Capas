@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Persistence.Data.Configuration
+namespace Domain.Entities
 {
-    public class CiudadConfiguration
+    public class BaseEntityString
     {
-        
+        public string Id;
     }
 }

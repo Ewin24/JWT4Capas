@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Person
+    public class Person : BaseEntityInt
     {
-        public string IdPersonType { get; set; }
         public string PersonName { get; set; }
         public int IdGenderFk { get; set; }
         public Gender Gender { get; set; }

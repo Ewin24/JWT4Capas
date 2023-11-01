@@ -24,11 +24,9 @@ namespace Persistence.Data.Configuration
             .IsRequired()
             .HasMaxLength(50);
 
-            builder.HasOne(p => p.Pais)
-            .WithMany(p => p.Departamentos)
-            .HasForeignKey(p => p.IdPaisFk);
-
+            builder.HasOne(p => p.Country)
+            .WithMany(p => p.States)
+            .HasForeignKey(p => p.IdCountryFk);
         }
-
     }
 }
